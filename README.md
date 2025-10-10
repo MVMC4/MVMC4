@@ -1,16 +1,17 @@
 # Hi there, I'm Mooketsi Magwaza 👋
 
 ## About Me
-- 💻Web developer
-- 🌱 Learning React, Node.js, and Angular
-- 📫 Reach me at mooketsimagwazajr@gmail.com
+- 💻 Web and Java developer
+- 🌱 Learning React, Node.js, Angular, and building APIs with Spring Boot
+- 📫 Reach me at [mooketsimagwazajr@gmail.com](mailto:mooketsimagwazajr@gmail.com)
 
 ## Skills
-- Languages: Python, Java, JavaScript
-- Frameworks: React, Node.js, Springboot
+- **Languages:** Python, Java, JavaScript
+- **Frameworks & Tools:** React, Node.js, Spring Boot
+- **Other:** Java applications, RESTful APIs
 
 ## Projects
-- [Project1]([https://github.com/SugarFuelledLad/project1](https://github.com/MVMC4/transit-route-optimization)) – Full Stack API project
+- [Transit Route Optimization](https://github.com/MVMC4/transit-route-optimization) – Full Stack API project
 
 ## Stats
-![GitHub stats](https://github-readme-stats.vercel.app/api?username=MVMC4&show_icons=true)
+![GitHub stats](https://github-readme-stats.vercel.app/api?username=MVMC4&show_icons=true&theme=radical)
