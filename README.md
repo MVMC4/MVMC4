@@ -1,8 +1,8 @@
 # Hi there, I'm Mooketsi Magwaza 👋
 
 ## About Me
-- 💻 Full-stack developer
-- 🌱 Learning React, Node.js, and AI projects
+- 💻Web developer
+- 🌱 Learning React, Node.js, and Angular
 - 📫 Reach me at mooketsimagwazajr@gmail.com
 
 ## Skills
