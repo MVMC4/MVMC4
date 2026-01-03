@@ -69,12 +69,6 @@ I’m a **Software Developer** experienced across the **frontend, backend, and f
 
 ---
 
-## 📊 GitHub Stats
-
-![GitHub stats](https://github-readme-stats.vercel.app/api?username=MVMC4\&show_icons=true\&theme=radical)
-
----
-
 ## 🎯 Open To
 
 * Backend Developer (Spring Boot / Node.js)
