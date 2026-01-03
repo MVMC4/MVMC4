@@ -19,10 +19,8 @@ I’m a **Software Developer** experienced across the **frontend, backend, and f
 
 ### 🛠️ Backend
 
-![Java](https://img.shields.io/badge/Java-ED8B00?style=for-the-badge\&logo=oracle\&logoColor=white)
 ![Spring Boot](https://img.shields.io/badge/Spring_Boot-6DB33F?style=for-the-badge\&logo=springboot\&logoColor=white)
 ![Node.js](https://img.shields.io/badge/Node.js-339933?style=for-the-badge\&logo=nodedotjs\&logoColor=white)
-![REST API](https://img.shields.io/badge/REST_API-005571?style=for-the-badge)
 
 ---
 
@@ -47,11 +45,9 @@ I’m a **Software Developer** experienced across the **frontend, backend, and f
 
 ### 🔗 Full-Stack
 
-![Full Stack](https://img.shields.io/badge/Full--Stack-000000?style=for-the-badge)
-![Java](https://img.shields.io/badge/Java_Backend-ED8B00?style=for-the-badge)
-![TypeScript](https://img.shields.io/badge/TypeScript_Full--Stack-3178C6?style=for-the-badge)
-![API Integration](https://img.shields.io/badge/API_Integration-4CAF50?style=for-the-badge)
-![Database\_Design](https://img.shields.io/badge/Database_Design-6A1B9A?style=for-the-badge)
+
+![Spring Boot](https://img.shields.io/badge/Spring_Boot-6DB33F?style=for-the-badge&logo=springboot&logoColor=white)
+![Node.js](https://img.shields.io/badge/Node.js-339933?style=for-the-badge&logo=nodedotjs&logoColor=white)
 
 ---
 
