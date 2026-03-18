@@ -4,7 +4,7 @@
 
 ---
 
-## 🚀 About Me
+## About Me
 
 I’m a **Software Developer** experienced across the **frontend, backend, and full-stack** spectrum, with a growing focus on **API development, scalable systems, and containerization**.
 
@@ -15,16 +15,16 @@ I’m a **Software Developer** experienced across the **frontend, backend, and f
 
 ---
 
-## 🧠 Tech Stack
+## Tech Stack
 
-### 🛠️ Backend
+### Backend
 
 ![Spring Boot](https://img.shields.io/badge/Spring_Boot-6DB33F?style=for-the-badge\&logo=springboot\&logoColor=white)
 ![Node.js](https://img.shields.io/badge/Node.js-339933?style=for-the-badge\&logo=nodedotjs\&logoColor=white)
 
 ---
 
-### 🗄️ Databases
+### Databases
 
 ![PostgreSQL](https://img.shields.io/badge/PostgreSQL-4169E1?style=for-the-badge\&logo=postgresql\&logoColor=white)
 ![MySQL](https://img.shields.io/badge/MySQL-4479A1?style=for-the-badge\&logo=mysql\&logoColor=white)
@@ -32,7 +32,7 @@ I’m a **Software Developer** experienced across the **frontend, backend, and f
 
 ---
 
-### 🖥️ Frontend
+### Frontend
 
 ![HTML5](https://img.shields.io/badge/HTML5-E34F26?style=for-the-badge\&logo=html5\&logoColor=white)
 ![CSS3](https://img.shields.io/badge/CSS3-1572B6?style=for-the-badge\&logo=css3\&logoColor=white)
@@ -43,29 +43,28 @@ I’m a **Software Developer** experienced across the **frontend, backend, and f
 
 ---
 
-### 🔗 Full-Stack
-
+### Full-Stack
 
 ![Spring Boot](https://img.shields.io/badge/Spring_Boot-6DB33F?style=for-the-badge&logo=springboot&logoColor=white)
 ![Node.js](https://img.shields.io/badge/Node.js-339933?style=for-the-badge&logo=nodedotjs&logoColor=white)
 
 ---
 
-### ⚙️ DevOps
+### DevOps
 
 ![Docker](https://img.shields.io/badge/Docker-2496ED?style=for-the-badge\&logo=docker\&logoColor=white)
 
 ---
 
-## 📌 Featured Project
+## Featured Project
 
-### 🚍 Transit Route Optimization
+### Transit Route Optimization
 
 🔗 [https://github.com/MVMC4/transit-route-optimization](https://github.com/MVMC4/transit-route-optimization)
 
 **Full-Stack API project** focused on route optimization and backend data processing.
 
-**Tech:** Java • REST APIs • PostgreSQL / MySQL
+**Tech:** TypeScript • REST APIs • PostgreSQL 
 
 ---
 
