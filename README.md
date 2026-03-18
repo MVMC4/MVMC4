@@ -1,6 +1,6 @@
 # Hi there, I’m **Mooketsi Magwaza** 👋
 
-### Full-Stack Software Developer | Java • JavaScript • TypeScript
+### Full-Stack Software Developer | Java • JavaScript • TypeScript • PostgreSQL • MongoDB 
 
 ---
 
@@ -68,7 +68,7 @@ I’m a **Software Developer** experienced across the **frontend, backend, and f
 
 ---
 
-## 🎯 Open To
+## Open To
 
 * Backend Developer (Spring Boot / Node.js)
 * Frontend Developer (React / Angular)
