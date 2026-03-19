@@ -56,7 +56,15 @@ I’m a **Software Developer** experienced across the **frontend, backend, and f
 
 ---
 
-## Featured Project
+## Featured Projects
+
+### Team Watch
+
+🔗 [https://github.com/MVMC4/team-watch](https://github.com/MVMC4/team-watch)
+
+**Frontend** Data Visualization & Editing Tool for exploring and managing scraped web data.
+
+**Tech**: TypeScript • React • D3.js • Vite • Tailwind CSS
 
 ### Transit Route Optimization
 
