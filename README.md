@@ -11,7 +11,7 @@ Based in **Gaborone, Botswana**. Open to backend, full-stack, and platform-focus
 opportunities.
 
 [Email me](mailto:mooketsimagwazajr@gmail.com) ·
-[View my repositories](https://github.com/MVMC4?tab=repositories)
+[View my repositories](https://github.com/MooketsiMagwaza?tab=repositories)
 
 ---
 
@@ -26,10 +26,10 @@ opportunities.
 
 ## Selected work
 
-### [Tsela — Gaborone transit, made searchable](https://github.com/MVMC4/transit-route-optimization)
+### [Tsela — Gaborone transit, made searchable](https://github.com/MooketsiMagwaza/transit-route-optimization)
 
-<a href="https://github.com/MVMC4/transit-route-optimization">
-  <img src="https://raw.githubusercontent.com/MVMC4/transit-route-optimization/main/docs/assets/screenshots/marketing-home.jpg" alt="Tsela marketing homepage showing its route-first transit experience" width="100%">
+<a href="https://github.com/MooketsiMagwaza/transit-route-optimization">
+  <img src="https://raw.githubusercontent.com/MooketsiMagwaza/transit-route-optimization/main/docs/assets/screenshots/marketing-home.jpg" alt="Tsela marketing homepage showing its route-first transit experience" width="100%">
 </a>
 
 Tsela turns Gaborone's informal combi knowledge into a route-planning platform.
@@ -50,11 +50,11 @@ developer portal, and API.
 **Core stack:** Python · FastAPI · PostgreSQL · PostGIS · pgRouting · Next.js ·
 TypeScript · Docker · Prometheus · Grafana
 
-### [StockLink — shared purchasing for warehouses and retailers](https://github.com/MVMC4/stocklink)
+### [StockLink — shared purchasing for warehouses and retailers](https://github.com/MooketsiMagwaza/stocklink)
 
 | Warehouse operations | Multi-warehouse marketplace |
 | --- | --- |
-| <img src="https://raw.githubusercontent.com/MVMC4/stocklink/master/docs/assets/screenshots/05-warehouse-dashboard.png" alt="StockLink warehouse dashboard" width="100%"> | <img src="https://raw.githubusercontent.com/MVMC4/stocklink/master/docs/assets/screenshots/10-marketplace.png" alt="StockLink multi-warehouse marketplace" width="100%"> |
+| <img src="https://raw.githubusercontent.com/MooketsiMagwaza/stocklink/master/docs/assets/screenshots/05-warehouse-dashboard.png" alt="StockLink warehouse dashboard" width="100%"> | <img src="https://raw.githubusercontent.com/MooketsiMagwaza/stocklink/master/docs/assets/screenshots/10-marketplace.png" alt="StockLink multi-warehouse marketplace" width="100%"> |
 
 StockLink connects warehouses with retail stores, consolidates compatible demand
 into bulk orders, and follows shipments through delivery. Pricing and totals are
@@ -72,10 +72,10 @@ computed on the server so the marketplace does not trust client-supplied values.
 **Core stack:** Rust · Axum · sqlx · PostgreSQL · Redis · React · TypeScript ·
 Docker · nginx
 
-### [Obsidian Sync for iOS — local-first vault synchronization](https://github.com/MVMC4/obsidian-sync-ios)
+### [Obsidian Sync for iOS — local-first vault synchronization](https://github.com/MooketsiMagwaza/obsidian-sync-ios)
 
-<a href="https://github.com/MVMC4/obsidian-sync-ios">
-  <img src="https://raw.githubusercontent.com/MVMC4/obsidian-sync-ios/main/docs/images/vault-sync-active-session.jpg" alt="Obsidian Sync transferring an established vault on a physical iPad" width="100%">
+<a href="https://github.com/MooketsiMagwaza/obsidian-sync-ios">
+  <img src="https://raw.githubusercontent.com/MooketsiMagwaza/obsidian-sync-ios/main/docs/images/vault-sync-active-session.jpg" alt="Obsidian Sync transferring an established vault on a physical iPad" width="100%">
 </a>
 
 A free, open-source iPhone and iPad companion that joins an existing Syncthing
@@ -98,8 +98,8 @@ sync service.
 | Project | Why it exists |
 | --- | --- |
 | [University CS Docs](https://university-cs-docs.vercel.app) | A deployed, open-source learning platform for University of Botswana computer-science courses, backed by CI, CodeQL, and reusable interactive MDX components. |
-| [GlassHID](https://github.com/MVMC4/GlassHID) | Turns an Android phone into a local-only Bluetooth keyboard, trackpad, media remote, and gamepad using native HID APIs. |
-| [Obsidian Excalidraw Low Latency](https://github.com/MVMC4/obsidian-excalidraw-low-latency) | A low-latency pen companion for handwritten work in Obsidian Excalidraw. |
+| [GlassHID](https://github.com/MooketsiMagwaza/GlassHID) | Turns an Android phone into a local-only Bluetooth keyboard, trackpad, media remote, and gamepad using native HID APIs. |
+| [Obsidian Excalidraw Low Latency](https://github.com/MooketsiMagwaza/obsidian-excalidraw-low-latency) | A low-latency pen companion for handwritten work in Obsidian Excalidraw. |
 
 ## Technical toolkit
 
