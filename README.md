@@ -1,95 +1,133 @@
-# Mooketsi Magwaza
+# Mooketsi Vincent Magwaza
 
-Full-stack developer. I like taking a product from "just an idea" to a
-system that actually runs — real auth, a real database, a real deploy
-story — not just a UI over an API someone else designed. Most of what's
-below is still actively evolving; I ship in public and keep iterating.
+### Full-stack engineer building useful products and the systems that keep them running
 
-📫 **[mooketsimagwazajr@gmail.com](mailto:mooketsimagwazajr@gmail.com)** —
-open to backend, frontend or full-stack roles, entry-to-intermediate level.
+I turn early ideas into working software: the interface, API, data model,
+authentication, documentation, deployment path, and operational tooling. I care
+about products that solve real problems, especially where local knowledge or
+everyday workflows have not yet been made easy to use.
 
----
+Based in **Gaborone, Botswana**. Open to backend, full-stack, and platform-focused
+opportunities.
 
-## Featured Work
-
-### 🔗 [StockLink](https://github.com/MVMC4/stocklink)
-
-A B2B marketplace connecting warehouses to retail stores: warehouses
-publish server-priced stock by unit, case and pallet; stores order across
-every connected warehouse from one cart; compatible demand pools
-automatically into consolidated bulk orders; every listing carries photos
-stores can browse before they buy.
-
-- Four independent Rust/Axum services (identity, commerce, notifications,
-  media), each with its own PostgreSQL database, behind one nginx gateway
-- Stateless JWT auth verified independently by every service, a
-  Redis-backed denylist and rate limiter, internal-only service-to-service
-  APIs that never touch the public gateway
-- React/Vite/TypeScript frontend with a hand-built design system — no
-  component library, every pixel is a deliberate choice
-- Docker Compose for local dev, health-gated zero-downtime rolling updates,
-  a generated docs site from the repo's own Markdown
-- **Stack:** Rust · Axum · sqlx · PostgreSQL · Redis · React · TypeScript · Docker
-
-### 🔗 [Transit Route Optimization](https://github.com/MVMC4/transit-route-optimization)
-
-A full-stack transit platform: a route-optimization API, an operations
-dashboard, a rider-facing app, a public marketing site, and real developer
-documentation (Fumadocs) with sign-up and API access gated behind proper
-auth — five independent apps that all have to agree with each other.
-
-- Node.js/TypeScript API with route CRUD and an optimization endpoint,
-  backed by PostgreSQL
-- Session-based auth gating the docs and dashboard, verified server-side on
-  every protected request rather than trusting a cookie's mere presence
-- Five deployable apps (api, admin, rider, marketing, docs) behind one
-  Docker Compose stack
-- **Stack:** TypeScript · Node.js · PostgreSQL · Docker
+[Email me](mailto:mooketsimagwazajr@gmail.com) ·
+[View my repositories](https://github.com/MVMC4?tab=repositories)
 
 ---
 
-## Tech Stack
+## What I build
 
-**Backend**
-![Rust](https://img.shields.io/badge/Rust-000000?style=for-the-badge&logo=rust&logoColor=white)
-![Axum](https://img.shields.io/badge/Axum-000000?style=for-the-badge&logo=rust&logoColor=white)
-![Node.js](https://img.shields.io/badge/Node.js-339933?style=for-the-badge&logo=nodedotjs&logoColor=white)
-![Spring Boot](https://img.shields.io/badge/Spring_Boot-6DB33F?style=for-the-badge&logo=springboot&logoColor=white)
+- **Product systems** — web and mobile experiences designed around a real user
+  journey, not a collection of disconnected screens.
+- **Backend and data platforms** — domain-focused APIs, spatial data, queues,
+  caching, authentication, and databases with explicit ownership.
+- **Production foundations** — observability, rate limits, security boundaries,
+  recovery documentation, and deployment workflows that make a system operable.
 
-**Frontend**
-![TypeScript](https://img.shields.io/badge/TypeScript-3178C6?style=for-the-badge&logo=typescript&logoColor=white)
-![React](https://img.shields.io/badge/React-20232A?style=for-the-badge&logo=react&logoColor=61DAFB)
-![JavaScript](https://img.shields.io/badge/JavaScript-F7DF1E?style=for-the-badge&logo=javascript&logoColor=black)
-![Angular](https://img.shields.io/badge/Angular-DD0031?style=for-the-badge&logo=angular&logoColor=white)
+## Selected work
 
-**Data**
-![PostgreSQL](https://img.shields.io/badge/PostgreSQL-4169E1?style=for-the-badge&logo=postgresql&logoColor=white)
-![Redis](https://img.shields.io/badge/Redis-DC382D?style=for-the-badge&logo=redis&logoColor=white)
-![MongoDB](https://img.shields.io/badge/MongoDB-47A248?style=for-the-badge&logo=mongodb&logoColor=white)
+### [Tsela — Gaborone transit, made searchable](https://github.com/MVMC4/transit-route-optimization)
 
-**Ops**
-![Docker](https://img.shields.io/badge/Docker-2496ED?style=for-the-badge&logo=docker&logoColor=white)
-![Nginx](https://img.shields.io/badge/Nginx-009639?style=for-the-badge&logo=nginx&logoColor=white)
-![Prometheus](https://img.shields.io/badge/Prometheus-E6522C?style=for-the-badge&logo=prometheus&logoColor=white)
-![Grafana](https://img.shields.io/badge/Grafana-F46800?style=for-the-badge&logo=grafana&logoColor=white)
+<a href="https://github.com/MVMC4/transit-route-optimization">
+  <img src="https://raw.githubusercontent.com/MVMC4/transit-route-optimization/main/docs/assets/screenshots/marketing-home.jpg" alt="Tsela marketing homepage showing its route-first transit experience" width="100%">
+</a>
 
----
+Tsela turns Gaborone's informal combi knowledge into a route-planning platform.
+A rider can choose an origin and destination, compare road-following routes, see
+where to board, and understand where to get off. The same repository includes
+the rider experience, marketing site, operations dashboard, authenticated
+developer portal, and API.
 
-## Other Projects
+- FastAPI owns the HTTP API; PostgreSQL, PostGIS, and pgRouting own spatial data
+  and road-aligned routing; OR-Tools supports optimization work.
+- Five separate product surfaces share one platform without collapsing into one
+  monolithic application.
+- Prometheus, Grafana, Tempo, OpenTelemetry, structured logs, and request IDs
+  provide an observable path through the system.
+- The repository documents security boundaries, backups and recovery, production
+  authentication, data ownership, API limits, accessibility, and launch gaps.
 
-A few smaller, finished things — mostly built because I wanted the tool to
-exist, not as a portfolio exercise:
+**Core stack:** Python · FastAPI · PostgreSQL · PostGIS · pgRouting · Next.js ·
+TypeScript · Docker · Prometheus · Grafana
 
-| Project | What it is |
+### [StockLink — shared purchasing for warehouses and retailers](https://github.com/MVMC4/stocklink)
+
+| Warehouse operations | Multi-warehouse marketplace |
 | --- | --- |
-| [GlassHID](https://github.com/MVMC4/GlassHID) | Turns an Android phone into an offline Bluetooth keyboard/trackpad/remote/gamepad |
-| [obsidian-excalidraw-low-latency](https://github.com/MVMC4/obsidian-excalidraw-low-latency) | Low-latency pen companion plugin for Obsidian Excalidraw |
-| [obsidian-blackboard](https://github.com/MVMC4/obsidian-blackboard) | Handwritten drawings in Obsidian Canvas |
-| [obsidian-sync-ios](https://github.com/MVMC4/obsidian-sync-ios) | Free, open-source iOS companion for Obsidian + Syncthing |
-| [team-watch](https://github.com/MVMC4/team-watch) | Data visualization tool for scraped hackathon data |
+| <img src="https://raw.githubusercontent.com/MVMC4/stocklink/master/docs/assets/screenshots/05-warehouse-dashboard.png" alt="StockLink warehouse dashboard" width="100%"> | <img src="https://raw.githubusercontent.com/MVMC4/stocklink/master/docs/assets/screenshots/10-marketplace.png" alt="StockLink multi-warehouse marketplace" width="100%"> |
 
----
+StockLink connects warehouses with retail stores, consolidates compatible demand
+into bulk orders, and follows shipments through delivery. Pricing and totals are
+computed on the server so the marketplace does not trust client-supplied values.
 
-*If you're reading this as part of a hiring process: thanks for going this
-deep. Happy to walk through any of the above — architecture decisions,
-what I'd do differently now, all of it.*
+- Four Rust/Axum services—identity, commerce, notifications, and media—each own
+  their PostgreSQL database behind one nginx gateway.
+- Stateless JWT verification, a Redis-backed denylist and rate limiter, and
+  internal-only service APIs define clear trust boundaries.
+- The React application exercises the services end to end; repository Markdown
+  generates the Fumadocs documentation site.
+- Health-gated rolling updates run on Docker Compose. The event outbox and Kafka
+  publisher are documented honestly as unfinished rather than presented as live.
+
+**Core stack:** Rust · Axum · sqlx · PostgreSQL · Redis · React · TypeScript ·
+Docker · nginx
+
+### [GlassHID — an Android phone as an offline input device](https://github.com/MVMC4/GlassHID)
+
+<a href="https://github.com/MVMC4/GlassHID">
+  <img src="https://raw.githubusercontent.com/MVMC4/GlassHID/main/docs/images/project-banner.png" alt="GlassHID turns an Android phone into an offline keyboard, trackpad, and gamepad" width="100%">
+</a>
+
+GlassHID turns an Android phone into a Bluetooth keyboard, trackpad, media
+remote, and gamepad without an account or cloud service. It uses Android's native
+HID Device profile, includes a cable-only fallback, and is built with platform
+APIs rather than third-party runtime dependencies.
+
+**Core stack:** Java · Android Bluetooth HID · USB/ADB · Python
+
+## Smaller tools and public experiments
+
+| Project | Why it exists |
+| --- | --- |
+| [University CS Docs](https://github.com/MVMC4/university-cs-docs) | An open, interactive study hub for University of Botswana computer-science courses. |
+| [Obsidian Excalidraw Low Latency](https://github.com/MVMC4/obsidian-excalidraw-low-latency) | A low-latency pen companion for handwritten work in Obsidian Excalidraw. |
+| [Obsidian Sync for iOS](https://github.com/MVMC4/obsidian-sync-ios) | A free, open-source companion for syncing Obsidian vaults with Syncthing. |
+| [Team Watch](https://github.com/MVMC4/team-watch) | A visual exploration of data collected from BOCRA hackathon teams. |
+
+## Technical toolkit
+
+| Area | Tools I use |
+| --- | --- |
+| Backend | Rust, Axum, Python, FastAPI, Java, REST APIs |
+| Web | TypeScript, React, Next.js, Vite, accessible responsive UI |
+| Data | PostgreSQL, PostGIS, pgRouting, Redis, SQLAlchemy, sqlx, Alembic |
+| Operations | Docker, nginx, GitHub Actions, Prometheus, Grafana, Tempo, OpenTelemetry |
+| Native | Android platform APIs, Bluetooth HID, Swift experiments |
+
+## How I work
+
+1. Start with the user journey and the facts the system must preserve.
+2. Give data and service boundaries explicit owners.
+3. Treat authentication, validation, rate limits, and failure states as product
+   work—not a cleanup phase.
+4. Document what is working, what is scaffolded, and what evidence is still
+   needed before launch.
+5. Prefer a small, understandable system until measured load justifies more
+   infrastructure.
+
+## What I am improving now
+
+- Validating Tsela's route data against real Gaborone roads and rider knowledge.
+- Moving authentication and operational controls from local demonstrations to a
+  launch-ready deployment path.
+- Finishing event delivery and deployment evidence in StockLink.
+- Turning project documentation into concise engineering case studies.
+
+## Let's talk
+
+I am interested in teams that care about product thinking, dependable backend
+systems, and engineers who can work across boundaries. I am especially happy to
+walk through the decisions, trade-offs, and unfinished edges in any project
+above.
+
+**[mooketsimagwazajr@gmail.com](mailto:mooketsimagwazajr@gmail.com)**
