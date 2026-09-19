@@ -72,27 +72,36 @@ computed on the server so the marketplace does not trust client-supplied values.
 **Core stack:** Rust · Axum · sqlx · PostgreSQL · Redis · React · TypeScript ·
 Docker · nginx
 
-### [GlassHID — an Android phone as an offline input device](https://github.com/MVMC4/GlassHID)
+### [University CS Docs — open study infrastructure](https://university-cs-docs.vercel.app)
 
-<a href="https://github.com/MVMC4/GlassHID">
-  <img src="https://raw.githubusercontent.com/MVMC4/GlassHID/main/docs/images/project-banner.png" alt="GlassHID turns an Android phone into an offline keyboard, trackpad, and gamepad" width="100%">
+<a href="https://university-cs-docs.vercel.app">
+  <img src="https://raw.githubusercontent.com/MVMC4/university-cs-docs/main/docs/migrations/mat221/visual-baselines/2026-08-20/desktop-dark-home.png" alt="University CS Docs interactive study platform" width="100%">
 </a>
 
-GlassHID turns an Android phone into a Bluetooth keyboard, trackpad, media
-remote, and gamepad without an account or cloud service. It uses Android's native
-HID Device profile, includes a cable-only fallback, and is built with platform
-APIs rather than third-party runtime dependencies.
+An open, interactive study platform for University of Botswana computer-science
+courses. It combines structured MDX notes with active recall, guided questions,
+mock exams, rendered mathematics, interactive components, and a searchable
+resource hub.
 
-**Core stack:** Java · Android Bluetooth HID · USB/ADB · Python
+- Custom learning components include quizzes, proof environments, formula tools,
+  graph viewers, file previews, and study canvases.
+- CI, CodeQL, dependency review, contribution guidance, governance, security
+  reporting, and an MIT license make it a genuine open-source project.
+- The live deployment is statically generated where possible while interactive
+  tools remain isolated client components.
 
-## Smaller tools and public experiments
+**Core stack:** Next.js · TypeScript · Fumadocs · MDX · React · KaTeX
+
+[Open the live site](https://university-cs-docs.vercel.app) ·
+[Read the source](https://github.com/MVMC4/university-cs-docs)
+
+## Other technical work
 
 | Project | Why it exists |
 | --- | --- |
-| [University CS Docs](https://github.com/MVMC4/university-cs-docs) | An open, interactive study hub for University of Botswana computer-science courses. |
+| [GlassHID](https://github.com/MVMC4/GlassHID) | Turns an Android phone into a local-only Bluetooth keyboard, trackpad, media remote, and gamepad using native HID APIs. |
 | [Obsidian Excalidraw Low Latency](https://github.com/MVMC4/obsidian-excalidraw-low-latency) | A low-latency pen companion for handwritten work in Obsidian Excalidraw. |
 | [Obsidian Sync for iOS](https://github.com/MVMC4/obsidian-sync-ios) | A free, open-source companion for syncing Obsidian vaults with Syncthing. |
-| [Team Watch](https://github.com/MVMC4/team-watch) | A visual exploration of data collected from BOCRA hackathon teams. |
 
 ## Technical toolkit
 
