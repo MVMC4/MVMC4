@@ -26,6 +26,50 @@ opportunities.
 
 ## Selected work
 
+### [StockLink — wholesale stock, from warehouse to shop door](https://github.com/MooketsiMagwaza/stocklink)
+
+<a href="https://github.com/MooketsiMagwaza/stocklink">
+  <img src="https://raw.githubusercontent.com/MooketsiMagwaza/MooketsiMagwaza/main/assets/stocklink/store-order-in-transit-dark.png" alt="StockLink retail store view in dark mode: an order in transit, with its delivery code, QR code and live position" width="100%">
+</a>
+
+| Delivery driver, on a phone: collect with the pickup code | Then on the road: hand over with the delivery code |
+| --- | --- |
+| <img src="https://raw.githubusercontent.com/MooketsiMagwaza/MooketsiMagwaza/main/assets/stocklink/driver-pickup-dark.png" alt="StockLink driver app in dark mode: collecting a parcel from the warehouse with its pickup code" width="100%"> | <img src="https://raw.githubusercontent.com/MooketsiMagwaza/MooketsiMagwaza/main/assets/stocklink/driver-on-the-road-dark.png" alt="StockLink driver app in dark mode: on the road, with the handover form and position sharing" width="100%"> |
+
+<p align="center">
+  <img src="https://raw.githubusercontent.com/MooketsiMagwaza/MooketsiMagwaza/main/assets/stocklink/public-tracking-dark.png" alt="StockLink public tracking page in dark mode: a parcel's journey and rounded position, with no account needed" width="60%">
+</p>
+
+<sub>Dark mode, from StockLink's sample-data preview: the accounts, orders and figures are invented, and each page says so. The last image is the public tracking page, which needs no account.</sub>
+
+StockLink connects warehouses, retail stores, and delivery drivers. Stores order
+from many warehouses in one cart, demand is pooled into bulk orders, and each
+parcel is followed from the warehouse door to the shop. Pricing and totals are
+computed on the server so the marketplace does not trust client-supplied values.
+
+- Five Rust/Axum services—identity, commerce, notifications, media, and ops—each
+  own their PostgreSQL database behind one nginx gateway.
+- Stateless JWT verification, a Redis-backed denylist and rate limiter, and
+  internal-only service APIs define clear trust boundaries.
+- One React application serves four kinds of user—warehouse, retail store,
+  phone-first delivery driver, and staff—in light and dark, with printable QR
+  receipts and configurable charts.
+- Every shipment carries two six-digit handover codes: a pickup code only the
+  warehouse sees and a delivery code only the store sees, so a parcel cannot be
+  collected or handed over without them. Public tracking shows only the journey and
+  a position rounded to about 100 metres.
+- Staff run the platform from an in-house admin console—accounts, sessions, API
+  keys, a read-only database viewer that masks secret columns, support tickets, and
+  an audit log—alongside Prometheus and Grafana, which link back to it.
+- The app, the Fumadocs documentation site, and the marketing site share one
+  Apple-style theme generated from the same design tokens.
+- The repository says plainly what has not run: the screenshots come from a
+  sample-data preview, the Docker stack and the newest migrations have never been
+  brought up end to end, and the event outbox and Kafka publisher are unfinished.
+
+**Core stack:** Rust · Axum · sqlx · PostgreSQL · Redis · React · TypeScript ·
+Docker · nginx · Prometheus · Grafana
+
 ### [Tsela — Gaborone transit, made searchable](https://github.com/MooketsiMagwaza/transit-route-optimization)
 
 <a href="https://github.com/MooketsiMagwaza/transit-route-optimization">
@@ -49,28 +93,6 @@ developer portal, and API.
 
 **Core stack:** Python · FastAPI · PostgreSQL · PostGIS · pgRouting · Next.js ·
 TypeScript · Docker · Prometheus · Grafana
-
-### [StockLink — shared purchasing for warehouses and retailers](https://github.com/MooketsiMagwaza/stocklink)
-
-| Warehouse operations | Multi-warehouse marketplace |
-| --- | --- |
-| <img src="https://raw.githubusercontent.com/MooketsiMagwaza/stocklink/master/docs/assets/screenshots/05-warehouse-dashboard.png" alt="StockLink warehouse dashboard" width="100%"> | <img src="https://raw.githubusercontent.com/MooketsiMagwaza/stocklink/master/docs/assets/screenshots/10-marketplace.png" alt="StockLink multi-warehouse marketplace" width="100%"> |
-
-StockLink connects warehouses with retail stores, consolidates compatible demand
-into bulk orders, and follows shipments through delivery. Pricing and totals are
-computed on the server so the marketplace does not trust client-supplied values.
-
-- Four Rust/Axum services—identity, commerce, notifications, and media—each own
-  their PostgreSQL database behind one nginx gateway.
-- Stateless JWT verification, a Redis-backed denylist and rate limiter, and
-  internal-only service APIs define clear trust boundaries.
-- The React application exercises the services end to end; repository Markdown
-  generates the Fumadocs documentation site.
-- Health-gated rolling updates run on Docker Compose. The event outbox and Kafka
-  publisher are documented honestly as unfinished rather than presented as live.
-
-**Core stack:** Rust · Axum · sqlx · PostgreSQL · Redis · React · TypeScript ·
-Docker · nginx
 
 ### [Obsidian Sync for iOS — local-first vault synchronization](https://github.com/MooketsiMagwaza/obsidian-sync-ios)
 
@@ -127,9 +149,10 @@ sync service.
 - Validating Tsela's route data against real Gaborone roads and rider knowledge.
 - Moving authentication and operational controls from local demonstrations to a
   launch-ready deployment path.
-- Finishing event delivery and deployment evidence in StockLink.
 - Stress-testing interrupted transfers, conflicts, permissions, and larger vaults
   in Obsidian Sync for iOS.
+- StockLink is parked for now. Next is its first full run on Docker, then finishing
+  event delivery.
 
 ## Let's talk
 
