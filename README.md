@@ -10,6 +10,7 @@ everyday workflows have not yet been made easy to use.
 Based in **Gaborone, Botswana**. Open to backend, full-stack, and platform-focused
 opportunities.
 
+[Portfolio](https://mooketsimagwaza.github.io/portfolio/) ·
 [Email me](mailto:mooketsimagwazajr@gmail.com) ·
 [View my repositories](https://github.com/MooketsiMagwaza?tab=repositories)
 
@@ -40,32 +41,38 @@ opportunities.
   <img src="https://raw.githubusercontent.com/MooketsiMagwaza/MooketsiMagwaza/main/assets/stocklink/stocklink-public-tracking-dark.png" alt="StockLink public tracking page in dark mode, in a Mac window: a parcel's journey and rounded position, no account needed" width="46%">
 </p>
 
-<sub>Dark mode, from StockLink's sample-data preview: the accounts, orders and figures are invented, and each page says so. The last window is the public tracking page, which needs no account.</sub>
+<sub>Dark mode, from StockLink's sample-data preview. The shops, orders and numbers are made up, and every page says so. The last window is the public tracking page, which anyone can open without an account.</sub>
 
-StockLink connects warehouses, retail stores, and delivery drivers. Stores order
-from many warehouses in one cart, demand is pooled into bulk orders, and each
-parcel is followed from the warehouse door to the shop. Pricing and totals are
-computed on the server so the marketplace does not trust client-supplied values.
+Small shops often buy from several warehouses and then wait on deliveries they
+can't see. I built StockLink to put all of that in one place. A shop orders from
+many warehouses in one cart, demand from several shops can be pooled into one bulk
+order, and every parcel can be followed from the warehouse door to the shop.
+Prices are always worked out on the server, so the browser can't quietly change
+what something costs.
 
-- Five Rust/Axum services—identity, commerce, notifications, media, and ops—each
-  own their PostgreSQL database behind one nginx gateway.
-- Stateless JWT verification, a Redis-backed denylist and rate limiter, and
-  internal-only service APIs define clear trust boundaries.
-- One React application serves four kinds of user—warehouse, retail store,
-  phone-first delivery driver, and staff—in light and dark, with printable QR
-  receipts and configurable charts.
-- Every shipment carries two six-digit handover codes: a pickup code only the
-  warehouse sees and a delivery code only the store sees, so a parcel cannot be
-  collected or handed over without them. Public tracking shows only the journey and
-  a position rounded to about 100 metres.
-- Staff run the platform from an in-house admin console—accounts, sessions, API
-  keys, a read-only database viewer that masks secret columns, support tickets, and
-  an audit log—alongside Prometheus and Grafana, which link back to it.
-- The app, the Fumadocs documentation site, and the marketing site share one
-  Apple-style theme generated from the same design tokens.
-- The repository says plainly what has not run: the screenshots come from a
-  sample-data preview, the Docker stack and the newest migrations have never been
-  brought up end to end, and the event outbox and Kafka publisher are unfinished.
+- **How it's put together.** Five Rust (Axum) services, each with its own
+  PostgreSQL database, sit behind one nginx gateway: identity, commerce,
+  notifications, media and ops. Each service checks sign-in tokens on its own,
+  Redis handles the denylist and the rate limits, and the services only talk to
+  each other through internal APIs.
+- **Who it's for.** One React app covers warehouses, shops, delivery drivers
+  (built phone-first) and staff. It has light and dark themes, printable QR
+  receipts and charts you can change.
+- **Handing over a parcel.** Every delivery has two six-digit codes. The warehouse
+  sees the pickup code and the shop sees the delivery code, so a driver can't
+  collect or hand over a parcel without them. Anyone can follow a parcel from its
+  tracking link, but they only see where it is, rounded to about 100 metres, never
+  names, addresses or what's inside.
+- **Keeping an eye on it.** Staff get an admin console inside the app: accounts,
+  sessions, API keys, a read-only database viewer that hides secret columns,
+  support tickets and an audit log. It sits next to Prometheus and Grafana, and
+  Grafana links back to it.
+- **One look everywhere.** The app, the docs site and the marketing site all use
+  the same Apple-inspired design, built from one set of tokens.
+- **What isn't done.** I'd rather say it than hide it. The screenshots come from a
+  sample-data preview, I haven't yet brought the whole Docker stack up end to end
+  or run the newest migrations on a real database, and the event outbox and Kafka
+  publisher aren't finished.
 
 **Core stack:** Rust · Axum · sqlx · PostgreSQL · Redis · React · TypeScript ·
 Docker · nginx · Prometheus · Grafana
@@ -146,12 +153,13 @@ sync service.
 
 ## Next up
 
-- StockLink: its first full run on Docker, then finishing event delivery.
-- Tsela: validating route data against real Gaborone roads and rider knowledge, and
-  moving authentication and operational controls from local demonstrations to a
-  launch-ready deployment path.
-- Obsidian Sync for iOS: stress-testing interrupted transfers, conflicts,
-  permissions, and larger vaults.
+- **StockLink:** get the whole stack running on Docker for the first time, then
+  finish event delivery.
+- **Tsela:** check the route data against real Gaborone roads and what riders
+  actually know, and move sign-in and ops controls from local demos to something
+  ready to launch.
+- **Obsidian Sync for iOS:** keep pushing on interrupted transfers, conflicts,
+  permissions and bigger vaults.
 
 ## Let's talk
 
