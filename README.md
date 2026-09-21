@@ -29,18 +29,18 @@ opportunities.
 ### [StockLink — wholesale stock, from warehouse to shop door](https://github.com/MooketsiMagwaza/stocklink)
 
 <a href="https://github.com/MooketsiMagwaza/stocklink">
-  <img src="https://raw.githubusercontent.com/MooketsiMagwaza/MooketsiMagwaza/main/assets/stocklink/store-order-in-transit-dark.png" alt="StockLink retail store view in dark mode: an order in transit, with its delivery code, QR code and live position" width="100%">
+  <img src="https://raw.githubusercontent.com/MooketsiMagwaza/MooketsiMagwaza/main/assets/stocklink/stocklink-store-order-dark.png" alt="StockLink retail store view in dark mode, in a Mac window: an order in transit, with its delivery code, QR code and live position" width="100%">
 </a>
 
-| Delivery driver, on a phone: collect with the pickup code | Then on the road: hand over with the delivery code |
-| --- | --- |
-| <img src="https://raw.githubusercontent.com/MooketsiMagwaza/MooketsiMagwaza/main/assets/stocklink/driver-pickup-dark.png" alt="StockLink driver app in dark mode: collecting a parcel from the warehouse with its pickup code" width="100%"> | <img src="https://raw.githubusercontent.com/MooketsiMagwaza/MooketsiMagwaza/main/assets/stocklink/driver-on-the-road-dark.png" alt="StockLink driver app in dark mode: on the road, with the handover form and position sharing" width="100%"> |
-
 <p align="center">
-  <img src="https://raw.githubusercontent.com/MooketsiMagwaza/MooketsiMagwaza/main/assets/stocklink/public-tracking-dark.png" alt="StockLink public tracking page in dark mode: a parcel's journey and rounded position, with no account needed" width="60%">
+  <img src="https://raw.githubusercontent.com/MooketsiMagwaza/MooketsiMagwaza/main/assets/stocklink/stocklink-driver-phones-dark.png" alt="StockLink driver app in dark mode, on two iPhones: collecting a parcel with the warehouse's pickup code, then on the road with the handover form" width="76%">
 </p>
 
-<sub>Dark mode, from StockLink's sample-data preview: the accounts, orders and figures are invented, and each page says so. The last image is the public tracking page, which needs no account.</sub>
+<p align="center">
+  <img src="https://raw.githubusercontent.com/MooketsiMagwaza/MooketsiMagwaza/main/assets/stocklink/stocklink-public-tracking-dark.png" alt="StockLink public tracking page in dark mode, in a Mac window: a parcel's journey and rounded position, no account needed" width="46%">
+</p>
+
+<sub>Dark mode, from StockLink's sample-data preview: the accounts, orders and figures are invented, and each page says so. The last window is the public tracking page, which needs no account.</sub>
 
 StockLink connects warehouses, retail stores, and delivery drivers. Stores order
 from many warehouses in one cart, demand is pooled into bulk orders, and each
@@ -73,7 +73,7 @@ Docker · nginx · Prometheus · Grafana
 ### [Tsela — Gaborone transit, made searchable](https://github.com/MooketsiMagwaza/transit-route-optimization)
 
 <a href="https://github.com/MooketsiMagwaza/transit-route-optimization">
-  <img src="https://raw.githubusercontent.com/MooketsiMagwaza/transit-route-optimization/main/docs/assets/screenshots/marketing-home.jpg" alt="Tsela marketing homepage showing its route-first transit experience" width="100%">
+  <img src="https://raw.githubusercontent.com/MooketsiMagwaza/MooketsiMagwaza/main/assets/tsela/tsela-rider-routes.png" alt="Tsela rider app in a Mac window: every mapped route in Gaborone, with search and a route list" width="100%">
 </a>
 
 Tsela turns Gaborone's informal combi knowledge into a route-planning platform.
@@ -144,15 +144,14 @@ sync service.
 5. Prefer a small, understandable system until measured load justifies more
    infrastructure.
 
-## What I am improving now
+## Next up
 
-- Validating Tsela's route data against real Gaborone roads and rider knowledge.
-- Moving authentication and operational controls from local demonstrations to a
+- StockLink: its first full run on Docker, then finishing event delivery.
+- Tsela: validating route data against real Gaborone roads and rider knowledge, and
+  moving authentication and operational controls from local demonstrations to a
   launch-ready deployment path.
-- Stress-testing interrupted transfers, conflicts, permissions, and larger vaults
-  in Obsidian Sync for iOS.
-- StockLink is parked for now. Next is its first full run on Docker, then finishing
-  event delivery.
+- Obsidian Sync for iOS: stress-testing interrupted transfers, conflicts,
+  permissions, and larger vaults.
 
 ## Let's talk
 
